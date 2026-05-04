@@ -22,7 +22,6 @@ namespace Calculadora
 
             try
             {
-                // Program.cs agora só coordena — a lógica fica na classe Calculadora
                 var calculadora = new Calculadora();
                 float resultado = calculadora.Executar(operacao, num1, num2);
 
