@@ -2,13 +2,10 @@
 
 namespace Calculadora
 {
-    // Classe responsável por criar e executar a operação correta
     public class Calculadora
     {
         public float Executar(int opcao, float numero1, float numero2)
         {
-            // Polimorfismo: a variável é do tipo base "Operacao"
-            // mas recebe objetos de tipos diferentes conforme a escolha
             Operacao operacao;
 
             switch (opcao)
@@ -31,7 +28,6 @@ namespace Calculadora
 
             Console.WriteLine($"\nOperação: {operacao.Descricao()}");
 
-            // Chama Calcular() — cada classe decide como calcular (polimorfismo)
             return operacao.Calcular();
         }
     }
